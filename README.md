@@ -3,7 +3,7 @@
 Modern Spring Boot 3.5.4 tutorials with Java 17 features.
 
 ## Key Modernizations:
-- **Spring Boot 3.5.4** (upgraded from 2.x)
+- **Spring Boot 3.5.4** 
 - **Java 17** with modern language features
 - **Jakarta EE** (migrated from javax.*)
 - **Spring Security 6.x** with modern configuration
