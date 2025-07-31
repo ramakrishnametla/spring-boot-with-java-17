@@ -1,3 +1,2 @@
 # Spring Boot + JDBC example
 
-Article link : in progress...

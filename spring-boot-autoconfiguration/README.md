@@ -1,6 +1,5 @@
 # Spring Boot @ConditionalOnProperty example
 
-Article link : https://mkyong.com/spring-boot/spring-boot-conditionalonproperty-example/
 
 ## How to run it
 ```

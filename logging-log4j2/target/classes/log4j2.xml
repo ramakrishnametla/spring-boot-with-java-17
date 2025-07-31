@@ -1,24 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="DEBUG">
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</Property>
+        <Property name="APP_LOG_ROOT">logs</Property>
+    </Properties>
+    
     <Appenders>
+        <!-- Console Appender with improved pattern -->
         <Console name="LogToConsole" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
         </Console>
-        <File name="LogToFile" fileName="logs/app.log">
-            <PatternLayout>
-                <Pattern>%d %p %c{1.} [%t] %m%n</Pattern>
-            </PatternLayout>
-        </File>
+        
+        <!-- Rolling File Appender for better log management -->
+        <RollingFile name="LogToFile" fileName="${APP_LOG_ROOT}/app.log" 
+                     filePattern="${APP_LOG_ROOT}/app.%i.log.gz">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="50MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="20"/>
+        </RollingFile>
+        
+        <!-- Async Appender for better performance with Java 17 -->
+        <AsyncLogger name="com.mrk" level="DEBUG" additivity="false">
+            <AppenderRef ref="LogToFile"/>
+            <AppenderRef ref="LogToConsole"/>
+        </AsyncLogger>
     </Appenders>
+    
     <Loggers>
-        <Logger name="com.mrk" level="debug" additivity="false">
+        <Logger name="com.mrk" level="DEBUG" additivity="false">
             <AppenderRef ref="LogToFile"/>
             <AppenderRef ref="LogToConsole"/>
         </Logger>
-        <Logger name="org.springframework.boot" level="error" additivity="false">
+        
+        <Logger name="org.springframework.boot" level="INFO" additivity="false">
             <AppenderRef ref="LogToConsole"/>
         </Logger>
-        <Root level="error">
+        
+        <Logger name="org.springframework.web" level="INFO" additivity="false">
+            <AppenderRef ref="LogToConsole"/>
+        </Logger>
+        
+        <!-- Enable virtual threads logging for Java 17+ -->
+        <Logger name="jdk.internal.misc" level="WARN" additivity="false">
+            <AppenderRef ref="LogToConsole"/>
+        </Logger>
+        
+        <Root level="INFO">
             <AppenderRef ref="LogToFile"/>
             <AppenderRef ref="LogToConsole"/>
         </Root>

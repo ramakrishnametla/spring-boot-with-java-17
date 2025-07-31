@@ -1,6 +1,5 @@
 # Spring Boot + Spring data JPA + PostgreSQL example
 
-Article link : https://mkyong.com/spring-boot/spring-boot/spring-boot-spring-data-jpa-postgresql/
 
 ## Technologies used:
 Technologies used:

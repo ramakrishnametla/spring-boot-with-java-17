@@ -2,4 +2,3 @@
 
 Modern Spring Boot 3.5.4 implementation with Java 17 features.
 
-Article link : https://www.mrk.com/spring-boot/spring-boot-how-to-send-email-via-smtp/

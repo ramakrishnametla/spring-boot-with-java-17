@@ -1,6 +1,5 @@
 # Spring Boot + Spring Data JPA + Paging And Sorting example
 
-Article link : https://mkyong.com/spring-boot/spring-data-jpa-paging-and-sorting-example/
 
 ## Technologies used:
 * Spring Boot 3.1.2
