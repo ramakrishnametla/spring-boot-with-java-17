@@ -1,8 +1,9 @@
-# Spring Boot + Spring data JPA + PostgreSQL example
+# Spring Boot + Spring Data JPA + PostgreSQL example
+
+This project demonstrates Spring Boot integration with Spring Data JPA and PostgreSQL database, including Testcontainers for integration testing.
 
 
 ## Technologies used:
-Technologies used:
 * Spring Boot 3.1.2
 * Spring Data JPA (Hibernate 6  is the default JPA implementation)
 * PostgreSQL 15
@@ -15,9 +16,9 @@ Technologies used:
 ## How to run it
 ```
 
-$ git clone [https://github.com/mkyong/spring-boot.git](https://github.com/mkyong/spring-boot.git)
+$ git clone https://github.com/ramakrishnametla/spring-boot-with-java-17.git
 
-$ cd spring-data-jpa-postgresql
+$ cd spring-boot-with-java-17/spring-data-jpa-postgresql
 
 $ ./mvnw clean package -Dmaven.test.skip=true
 

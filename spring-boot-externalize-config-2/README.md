@@ -1,13 +1,17 @@
 # Accessing Values from application.properties in Spring Boot
 
-Article link 
-* [https://mkyong.com/spring-boot/how-to-access-values-from-application-properties-in-spring-boot/](https://mkyong.com/spring-boot/how-to-access-values-from-application-properties-in-spring-boot/)
+This project demonstrates different ways to access values from application.properties file in Spring Boot using @Value, @ConfigurationProperties, and Environment.
+
+## Technologies used:
+* Spring Boot 3.1.2
+* Java 17
+* Maven
 
 ## 1. How to start
 ```
-$ git clone https://github.com/mkyong/spring-boot.git
+$ git clone https://github.com/ramakrishnametla/spring-boot-with-java-17.git
 
-$ cd spring-boot-externalize-config-2
+$ cd spring-boot-with-java-17/spring-boot-externalize-config-2
 
 $ mvn test
 

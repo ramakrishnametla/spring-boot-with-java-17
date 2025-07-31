@@ -1,5 +1,7 @@
 # Spring Boot + Spring Data JPA + MySQL example
 
+This project demonstrates Spring Boot integration with Spring Data JPA and MySQL database, including Testcontainers for integration testing.
+
 
 ## Technologies used:
 * Spring Boot 3.1.2
@@ -14,9 +16,9 @@
 ## How to run it
 ```
 
-$ git clone [https://github.com/mkyong/spring-boot.git](https://github.com/mkyong/spring-boot.git)
+$ git clone https://github.com/ramakrishnametla/spring-boot-with-java-17.git
 
-$ cd spring-data-jpa-mysql
+$ cd spring-boot-with-java-17/spring-data-jpa-mysql
 
 # Run MySQL container for testing
 $ docker run --name c1 -p 3306:3306 -e MYSQL_USER=mkyong -e MYSQL_PASSWORD=password -e MYSQL_ROOT_PASSWORD=password -e MYSQL_DATABASE=mydb -d mysql:8.1

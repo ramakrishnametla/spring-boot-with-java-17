@@ -1,13 +1,20 @@
 # Spring Boot Logback SLF4j Examples
 
-This is the source code the article [Spring Boot Logging Using Logback Examples](https://mkyong.com/spring-boot/spring-boot-logging-example/s)
+This project demonstrates Spring Boot logging configuration using Logback and SLF4J.
+
+## Technologies used:
+* Spring Boot 3.1.2
+* SLF4J
+* Logback
+* Java 17
+* Maven
 
 # How to run it?
 
 ```bash
-$ git clone https://github.com/mkyong/spring-boot.git
+$ git clone https://github.com/ramakrishnametla/spring-boot-with-java-17.git
 
-$ cd spring-boot-logging-slf4j-logback
+$ cd spring-boot-with-java-17/spring-boot-logging-slf4j-logback
 
 $ mvn spring-boot:run
 

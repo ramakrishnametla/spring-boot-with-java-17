@@ -1,6 +1,6 @@
 # Spring data JPA + @DataJpaTest
 
-This is the source code for [Testing Spring Data JPA with @DataJpaTest](https://mkyong.com/spring-boot/testing-spring-data-jpa-with-datajpatest/)
+This project demonstrates how to test Spring Data JPA repositories using @DataJpaTest annotation with H2 in-memory database.
 
 ## Technologies used:
 * Spring Boot 3.1.2
@@ -12,9 +12,9 @@ This is the source code for [Testing Spring Data JPA with @DataJpaTest](https://
 
 ## How to run it
 ```
-$ git clone https://github.com/mkyong/spring-boot.git
+$ git clone https://github.com/ramakrishnametla/spring-boot-with-java-17.git
 
-$ cd spring-data-jpa-test
+$ cd spring-boot-with-java-17/spring-data-jpa-test
 
 $ ./mvnw test
 ```

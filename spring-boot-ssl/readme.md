@@ -1,20 +1,20 @@
 ## What is it?
-This source code is an Spring Boot SSL (HTTPS) example.
+This source code is a Spring Boot SSL (HTTPS) example.
 
 Tested with
 * Maven 3
-* Java 8
-* Spring Boot 2.2.4.RELEASE
-* Spring Boot default embedded Tomcat 9
+* Java 17
+* Spring Boot 3.1.2
+* Spring Boot default embedded Tomcat 10
 * Self-signed certificate (PKCS12)
 
-For explanation, please visit this article - [Spring Boot SSL (HTTPS) examples](https://mkyong.com/spring-boot/spring-boot-ssl-https-examples/)
+This project demonstrates how to enable SSL/HTTPS in Spring Boot using self-signed certificates.
 
 ## How to run this?
 ```bash
-$ git clone https://github.com/mkyong/spring-boot
+$ git clone https://github.com/ramakrishnametla/spring-boot-with-java-17.git
 
-$ cd spring-boot-ssl
+$ cd spring-boot-with-java-17/spring-boot-ssl
 
 $ mvn clean package
 

@@ -1,12 +1,17 @@
 # Spring @PropertySource example
 
-This is sample code for [Spring @PropertySource example](https://mkyong.com/spring/spring-propertysources-example/)
+This project demonstrates how to use @PropertySource annotation to load properties from external files in Spring Boot.
+
+## Technologies used:
+* Spring Boot 3.1.2
+* Java 17
+* Maven
 
 ## 1. How to start
 ```
-$ git clone https://github.com/mkyong/spring-boot.git
+$ git clone https://github.com/ramakrishnametla/spring-boot-with-java-17.git
 
-$ cd spring-boot-externalize-config-3
+$ cd spring-boot-with-java-17/spring-boot-externalize-config-3
 
 $ mvn test
 

@@ -1,8 +1,6 @@
 # Spring Boot CommandLineRunner Example
 
-Article links
-* [Spring Boot CommandLineRunner Example](https://mkyong.com/spring-boot/spring-boot-commandlinerunner-example/)
-* [How to Run a CommandLineRunner Bean Conditionally in Spring Boot](https://mkyong.com/spring-boot/how-to-run-a-commandlinerunner-bean-conditionally-in-spring-boot/)
+This project demonstrates how to use CommandLineRunner interface in Spring Boot to execute code after the application starts up.
 
 ## Technologies used:
 * Spring Boot 3.1.2
@@ -13,9 +11,9 @@ Article links
 ## How to run it
 ```
 
-$ git clone [https://github.com/mkyong/spring-boot.git](https://github.com/mkyong/spring-boot.git)
+$ git clone https://github.com/ramakrishnametla/spring-boot-with-java-17.git
 
-$ cd spring-boot-commandlinerunner
+$ cd spring-boot-with-java-17/spring-boot-commandlinerunner
 
 $ ./mvnw spring-boot:run
 

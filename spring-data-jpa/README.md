@@ -1,6 +1,6 @@
 # Spring Boot + Spring Data JPA example
 
-This is the source code for [Spring Boot + Spring Data JPA example](https://mkyong.com/spring-boot/spring-boot-spring-data-jpa/)
+This project demonstrates Spring Boot integration with Spring Data JPA, using Hibernate 6 and H2 in-memory database.
 
 ## Technologies used:
 * Spring Boot 3.1.2
@@ -12,9 +12,9 @@ This is the source code for [Spring Boot + Spring Data JPA example](https://mkyo
 
 ## How to run it
 ```
-$ git clone https://github.com/mkyong/spring-boot.git
+$ git clone https://github.com/ramakrishnametla/spring-boot-with-java-17.git
 
-$ cd spring-data-jpa
+$ cd spring-boot-with-java-17/spring-data-jpa
 
 $ ./mvnw spring-boot:run
 ```

@@ -1,5 +1,7 @@
 # Spring Boot + Spring Data JPA + Paging And Sorting example
 
+This project demonstrates how to implement paging and sorting functionality using Spring Data JPA with H2 in-memory database.
+
 
 ## Technologies used:
 * Spring Boot 3.1.2
@@ -14,9 +16,9 @@
 ## How to run it
 ```
 
-$ git clone [https://github.com/mkyong/spring-boot.git](https://github.com/mkyong/spring-boot.git)
+$ git clone https://github.com/ramakrishnametla/spring-boot-with-java-17.git
 
-$ cd spring-data-jpa-paging-sorting
+$ cd spring-boot-with-java-17/spring-data-jpa-paging-sorting
 
 $ ./mvnw spring-boot:run
 
